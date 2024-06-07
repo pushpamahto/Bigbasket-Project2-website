@@ -322,10 +322,11 @@
     background-color: rgb(255, 255, 255);
     font-weight: normal;
 }
+
 @media screen and (max-width:1024px) {
     #nav {
         height: 50px;
-        /* border: 1px solid red; */
+       
     }
 
     #logo {
@@ -337,40 +338,32 @@
     }
 
     #search {
-        border: 0px;
+        border: 1px solid gray;
         display: flex;
-        margin-left: -100px;
-        width: 40%;
+        margin-left: -90px;
+        width: 25%;
     }
 
-    #input {
-        width: 60%;
-        margin-left: 100px;
-        border: 1px solid gray;
-    }
+    
 
 
 
     #searchlogo {
         width: 5%;
         cursor: pointer;
-        border: 1px solid gray;
-        border-left: none;
+        /* border: 1px solid gray; */
+        /* border-left: none; */
     }
 
     #basket {
-        /* border: 1px solid red; */
-        width: 120px;
+       
+        width: 80px;
         padding: 5px;
         margin-left: -60px;
     }
-/* 
-    #baskimg {
-        width: 100%;
-    } */
 
     #register {
-        /* border: 1px solid red; */
+       
         width: 10%;
         font-size: 12px;
     }
@@ -381,8 +374,8 @@
     }
 
     #category {
-        width: 15%;
-        padding: 8px;
+        width: 10%;
+        padding: 5px;
         font-size: 10px;
     }
 
@@ -394,13 +387,14 @@
         height: 50px;
         margin-top: 3rem;
     }
+    /* #location{
+        margin-left: -50px;
+    } */
 }
 
-@media screen and (max-width:600px) {
+@media screen  and (max-width:600px) {
 
-    /* #logo{
-        border: 1px solid red;
-    } */
+    
     #logo>img {
         width: 100%;
     }
@@ -410,22 +404,25 @@
     }
 
     #search {
-        border: 0px;
+        border: 1px solid gray;
         display: flex;
-        margin-left: -400px;
+        margin-left: -10px;
     }
 
-    #input {
-        width: 30%;
+    /* #input {
+        width: 20%;
         border: 1px solid gray;
-    }
+    } */
 
     #searchlogo {
         width: 10%;
         cursor: pointer;
         border: 1px solid gray;
         border-left: none;
+    }
 
+    #location{
+        display:none;
     }
 
     #category {
@@ -441,7 +438,7 @@
     }
 
     #basket {
-        margin-left: 200px;
+        margin-left: 70px;
     }
 
     #basket div:nth-child(2) {
@@ -468,11 +465,11 @@
         border-top: none;
         border-bottom: none;
         border-right: none;
-        margin-left: 300px;
+        margin-left: 5px;
     }
 
     #register div:nth-child(1)>svg {
-        /* border: 1px solid red; */
+        
         font-size: 20px;
         color: black;
         margin-left: -200px;
@@ -481,5 +478,11 @@
     #register div:nth-child(2) {
         content: "";
         font-size: 0px;
+    }
+} 
+
+@media screen and (max-width:400px){
+    #search{
+        display:none;
     }
 }

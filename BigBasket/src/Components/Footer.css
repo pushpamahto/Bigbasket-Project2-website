@@ -111,3 +111,13 @@
     padding-right: 5px;
     background-color: #f0f0f0;
 }
+
+@media  screen and (max-width:810px) {
+
+    .Social_logo_div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+}

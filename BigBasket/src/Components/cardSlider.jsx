@@ -1,11 +1,9 @@
 
-import { Heading } from "@chakra-ui/react";
-import React, { Component } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
 import Slider from "react-slick";
+import { Heading } from "@chakra-ui/react";
 import SingleCard from "./SingleCard/SingleCard";
-
-
+import "../Styles/cardSlider.css";  
 
 const CardSlider = () => {
     const Data = [
@@ -97,37 +95,54 @@ const CardSlider = () => {
             "Weight": "1 kg - Rs 113.50",
             "CartQuantity": 0
           }
-    ]
-    console.log(Data)
+    ];
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
-      };
-    return (
-        <div>
-        <Heading mt ='10'>My Smart Basket</Heading>
-        <Slider {...settings}>
-         {Data.map((el)=> {
-            return (
-                <SingleCard
-                id = {el.id}
-                key = {el.id}  
-                name = {el.name}
-                image = {el.Image}
-                Price = {el.Price}
-                Category = {el.category}
-                Weights = {el.Weight}
-                rating = {el.rating}
-                CartQuantity ={el.CartQuantity}
-               />
-            )
-         })}
-        </Slider>
-      </div>
-    )
-}
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
 
-export { CardSlider }
+    return (
+        <div className="card-slider-container">
+            <Heading mt='10'>My Smart Basket</Heading>
+            <Slider {...settings}>
+                {Data.map((el) => (
+                    <SingleCard
+                        id={el.id}
+                        key={el.id}
+                        name={el.name}
+                        image={el.Image}
+                        Price={el.Price}
+                        Category={el.category}
+                        Weights={el.Weight}
+                        rating={el.rating}
+                        CartQuantity={el.CartQuantity}
+                    />
+                ))}
+            </Slider>
+        </div>
+    );
+};
+
+export { CardSlider };

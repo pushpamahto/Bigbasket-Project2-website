@@ -63,7 +63,7 @@ export default function Login() {
             );
           });
           if (
-            formData.email === "pushpamahto764@gmail.com" &&
+            formData.email === "Pushpa@gmail.com" &&
             formData.password === "1234"
           ) {
             navigate("/Dash");
@@ -76,7 +76,7 @@ export default function Login() {
               duration: 4000,
               isClosable: true,
             });
-            navigate("/");
+            navigate("/Dash");
           } else {
             toast({
               title: "Invalid Credential.",
