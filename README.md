@@ -39,6 +39,8 @@ Redux
 
 npm packages
 
+DEPLOYMENT LINK:- https://bigbasket-project-react.netlify.app/
+
 
 SCREENSHORTS
 
