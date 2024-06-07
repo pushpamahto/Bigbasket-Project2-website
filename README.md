@@ -1,27 +1,44 @@
 # Bigbasket-Project2-website
 
-INTRODUCTION
+INTRODUCTION :-
+
 I cloned website of BigBasket.com . BigBasket is best online grocery store in India.BigBasket is an online supernarket for all your daily needs. This is my individual project by using react.
 
-FUNCTIONALITIES 
-SignIn/SignOut.
+FUNCTIONALITIES :-
+
+SignIn/SignOut
+
 Filter
+
 Dropdown
+
 SliderCard
+
 Sorting
+
 Add to cart
+
 Remove from card
+
 Payment page
 
 
-TECH STACK
+TECH STACK:-
+
 React Js
+
 Chakra-UI
+
 JavaScript
+
 React-redux
+
 CHAKRA UI
+
 Redux
+
 npm packages
+
 
 SCREENSHORTS
 
