@@ -2,7 +2,7 @@
 
 INTRODUCTION :-
 
-I cloned website of BigBasket.com . BigBasket is best online grocery store in India.BigBasket is an online supernarket for all your daily needs. This is my individual project by using react.
+I cloned website of BigBasket.com . BigBasket is best online grocery store in India.BigBasket is an online supermarket for all your daily needs. This is my individual project by using react.
 
 FUNCTIONALITIES :-
 
